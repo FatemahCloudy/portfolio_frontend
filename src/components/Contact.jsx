@@ -21,7 +21,10 @@ export default function Contact() {
         setIsSubmitting(true);
 
         try {
-            const response = await fetch("./backend/server.js", {
+            // Use environment variable for backend URL
+            const backendUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:5000';
+            
+            const response = await fetch(`${backendUrl}/api/contact`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -29,15 +32,17 @@ export default function Contact() {
                 body: JSON.stringify(formData),
             });
 
-            if (response.ok) {
-                alert("Message sent successfully!");
+            const result = await response.json();
+
+            if (result.success) {
+                alert("Message sent successfully! I'll get back to you soon.");
                 setFormData({ name: "", email: "", message: "" });
             } else {
-                throw new Error('Failed to send message');
+                throw new Error(result.message || 'Failed to send message');
             }
         } catch (error) {
             console.error('Error:', error);
-            alert("Failed to send message. Please try again.");
+            alert(error.message || "Failed to send message. Please try again.");
         } finally {
             setIsSubmitting(false);
         }
