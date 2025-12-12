@@ -1,9 +1,11 @@
 import React from "react";
+import "../styles/style.css";
 
 export default function Hero() {
     return (
         <section
             id="hero"
+            className="bg-root"
             style={{
                 padding: "6rem 2rem",
                 display: "flex",
@@ -11,6 +13,7 @@ export default function Hero() {
                 justifyContent: "space-between",
                 gap: "3rem",
                 flexWrap: "wrap",
+                // backgroundColor: "var(--bg-colour)" - REMOVED, using className instead
             }}
         >
             {/* About me */}
@@ -20,11 +23,11 @@ export default function Hero() {
                         fontSize: "2.8rem",
                         fontWeight: "800",
                         lineHeight: "1.2",
-                        color: "#333",
+                        color: "var(--dark-colour)",
                     }}
                 >
                     Hi, I'm{" "}
-                    <span style={{ color: "#795dae" }}>Fatemah</span>
+                    <span style={{ color: "var(--primary-colour)" }}>Fatemah</span>
                     <br />
                     Frontend Developer
                 </h1>
@@ -33,7 +36,7 @@ export default function Hero() {
                     style={{
                         marginTop: "1rem",
                         maxWidth: "450px",
-                        color: "#555",
+                        color: "var(--dark-colour)",
                         fontSize: "1.1rem",
                         lineHeight: "1.6",
                     }}
@@ -54,7 +57,7 @@ export default function Hero() {
                             padding: "0.8rem 1.6rem",
                             fontSize: "1rem",
                             borderRadius: "10px",
-                            background: "linear-gradient(90deg,#795dae,#cf7fdb)",
+                            background: "linear-gradient(90deg, var(--primary-colour), var(--secondary-colour))",
                             color: "white",
                             border: "none",
                             cursor: "pointer",
@@ -80,9 +83,9 @@ export default function Hero() {
                             padding: "0.8rem 1.6rem",
                             fontSize: "1rem",
                             borderRadius: "10px",
-                            border: "2px solid #795dae",
-                            background: "white",
-                            color: "#795dae",
+                            border: "2px solid var(--primary-colour)",
+                            background: "var(--bg-colour)",
+                            color: "var(--primary-colour)",
                             cursor: "pointer",
                             transition: "transform 0.25s ease",
                         }}
@@ -113,8 +116,7 @@ export default function Hero() {
                         position: "absolute",
                         width: "260px",
                         height: "260px",
-                        background:
-                            "linear-gradient(120deg, rgba(121,93,174,0.35), rgba(207,127,219,0.35))",
+                        background: "linear-gradient(120deg, rgba(121, 93, 174, 0.35), rgba(207, 127, 219, 0.35))",
                         borderRadius: "50%",
                         filter: "blur(40px)",
                         zIndex: 0,

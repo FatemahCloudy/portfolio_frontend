@@ -1,17 +1,18 @@
 import React from "react";
+import "../styles/style.css";
 
 export default function Footer() {
     return (
         <footer
             style={{
-                background: "#795dae",
-                color: "white",
+                background: "var(--primary-colour)",
+                color: "var(--light-color)",
                 padding: "1.5rem 1rem",
                 textAlign: "center",
                 marginTop: "2rem",
             }}
         >
-            <p style={{ margin: 0, fontSize: "1rem" }}>
+            <p style={{ margin: 0, fontSize: "1rem"}}>
                 © {new Date().getFullYear()} Fatemah — All Rights Reserved
             </p>
 

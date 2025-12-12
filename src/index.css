@@ -1,3 +1,31 @@
+:root {
+  --primary-colour: #795dae;
+  --secondary-colour: #cf7fdb;
+  --light-colour: #f9f9f9;
+  --dark-colour: #333;
+  --bg-colour: #f9f9f9;
+  --card-colour: white;
+}
+
+[data-theme='dark'] {
+  --primary-colour: #795dae;
+  --secondary-colour: #cf7fdb;
+  --light-colour: #333;
+  --dark-colour: #c9c3bc;
+  --bg-colour: #333;
+  --card-colour: #1b1e1e;
+}
+
+.bg-root {
+  background-color: var(--bg-colour);
+  color: var(--dark-colour);
+}
+
+.glass {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
+  backdrop-filter: blur(6px);
+}
+
 * {
   margin: 0;
   padding: 0;
