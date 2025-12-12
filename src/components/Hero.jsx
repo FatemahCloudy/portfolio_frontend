@@ -13,7 +13,6 @@ export default function Hero() {
                 justifyContent: "space-between",
                 gap: "3rem",
                 flexWrap: "wrap",
-                // backgroundColor: "var(--bg-colour)" - REMOVED, using className instead
             }}
         >
             {/* About me */}
@@ -125,7 +124,7 @@ export default function Hero() {
 
                 {/* Image */}
                 <img
-                    src="src/assets/profile.jpg"
+                    src="/assets/profile.jpg"
                     alt="profile"
                     style={{
                         width: "260px",

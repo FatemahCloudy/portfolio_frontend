@@ -7,7 +7,7 @@ export default function Projects() {
             id: 1,
             title: "Portfolio Website",
             desc: "A clean and responsive personal portfolio with contact form backend.",
-            img: "src/assets/portfolio.png",
+            img: "/assets/portfolio.png",
             category: "web",
             tags: ["React", "Node.js", "MongoDB", "Vite"]
         },
@@ -15,7 +15,7 @@ export default function Projects() {
             id: 2,
             title: "Todo App",
             desc: "A task manager with local storage and drag & drop functionality.",
-            img: "src/assets/todo.png",
+            img: "/assets/todo.png",
             category: "app",
             tags: ["React", "Tailwind", "Local Storage"]
         },
@@ -23,7 +23,7 @@ export default function Projects() {
             id: 3,
             title: "Memory of Place",
             desc: "Save and share memories about special places with geolocation.",
-            img: "src/assets/memory.png",
+            img: "/assets/memory.png",
             category: "app",
             tags: ["React", "Maps API", "Firebase"]
         },
