@@ -69,6 +69,7 @@ export default function Skills() {
                             padding: "2rem",
                             borderRadius: "20px",
                             border: "1px solid rgba(255, 255, 255, 0.1)",
+                            borderColor:"var(--primary-color)",
                             transition: "transform 0.3s ease, box-shadow 0.3s ease",
                         }}
                         onMouseEnter={(e) => {
