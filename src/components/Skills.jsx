@@ -58,6 +58,7 @@ export default function Skills() {
                     maxWidth: "1200px",
                     width: "100%",
                     margin: "0 auto",
+                    border: "var(--secondary-colour)"
                 }}
             >
                 {skillCategories.map((category, catIndex) => (
