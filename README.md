@@ -23,6 +23,11 @@ It leverages a **modern full-stack architecture** to provide a smooth, responsiv
 
 ---
 
+## Deployment
+Visit [https://portfolio-fatemah-theta-liart.vercel.app/](https://portfolio-fatemah-theta-liart.vercel.app/)
+
+---
+
 ## Setup Instructions
 
 1. **Clone the repository**
